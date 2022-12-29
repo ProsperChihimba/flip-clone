@@ -1,4 +1,5 @@
 import 'package:flip/utils/app_layout.dart';
+import 'package:flip/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -22,7 +23,7 @@ class BalanceSection extends StatelessWidget {
           horizontal: AppLayout.getWidth(20),
           vertical: AppLayout.getHeight(20),
         ),
-        height: AppLayout.getHeight(250),
+        height: AppLayout.getHeight(265),
         child: Column(
           children: [
             // First row
@@ -105,6 +106,52 @@ class BalanceSection extends StatelessWidget {
                 fontSize: AppLayout.getHeight(11),
               ),
             ),
+
+            // Forth row
+            Gap(AppLayout.getHeight(25)),
+            Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: AppLayout.getHeight(15),
+                    horizontal: AppLayout.getWidth(28),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius:
+                        BorderRadius.circular(AppLayout.getHeight(25)),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(
+                          AppLayout.getHeight(1.0),
+                        ),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF00008b),
+                          borderRadius: BorderRadius.circular(
+                            AppLayout.getHeight(25),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.add,
+                          size: AppLayout.getHeight(15),
+                          color: Styles.greenColor,
+                        ),
+                      ),
+                      Gap(AppLayout.getWidth(10)),
+                      Text(
+                        "Fund Wallet",
+                        style: TextStyle(
+                          fontSize: AppLayout.getHeight(12),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
