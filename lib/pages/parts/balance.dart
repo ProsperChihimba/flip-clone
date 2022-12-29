@@ -94,6 +94,17 @@ class BalanceSection extends StatelessWidget {
                 )
               ],
             ),
+
+            // Third row
+            Gap(AppLayout.getHeight(30)),
+            Text(
+              "NGN 0",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontSize: AppLayout.getHeight(11),
+              ),
+            ),
           ],
         ),
       ),
