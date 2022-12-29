@@ -1,5 +1,6 @@
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -23,7 +24,7 @@ class BalanceSection extends StatelessWidget {
           horizontal: AppLayout.getWidth(20),
           vertical: AppLayout.getHeight(20),
         ),
-        height: AppLayout.getHeight(265),
+        height: AppLayout.getHeight(269),
         child: Column(
           children: [
             // First row
@@ -110,11 +111,13 @@ class BalanceSection extends StatelessWidget {
             // Forth row
             Gap(AppLayout.getHeight(25)),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // First button
                 Container(
                   padding: EdgeInsets.symmetric(
                     vertical: AppLayout.getHeight(15),
-                    horizontal: AppLayout.getWidth(28),
+                    horizontal: AppLayout.getWidth(26),
                   ),
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -149,7 +152,45 @@ class BalanceSection extends StatelessWidget {
                       )
                     ],
                   ),
-                )
+                ),
+
+                // Second button
+                Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: AppLayout.getHeight(15),
+                    horizontal: AppLayout.getWidth(26),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    border: Border.all(
+                      width: AppLayout.getHeight(2),
+                      color: Colors.white,
+                    ),
+                    borderRadius:
+                        BorderRadius.circular(AppLayout.getHeight(25)),
+                  ),
+                  child: Row(
+                    children: [
+                      Transform.rotate(
+                        angle: -0.6,
+                        child: Icon(
+                          FluentSystemIcons.ic_fluent_send_filled,
+                          size: AppLayout.getHeight(15),
+                          color: Colors.white,
+                        ),
+                      ),
+                      Gap(AppLayout.getWidth(10)),
+                      Text(
+                        "Send Money",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: AppLayout.getHeight(12),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             )
           ],
