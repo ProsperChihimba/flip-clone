@@ -51,6 +51,26 @@ class _WalletsPageState extends State<WalletsPage> {
           // get started options
           Gap(AppLayout.getHeight(30)),
           const GetStarted(),
+
+          // Transactions section
+          Gap(AppLayout.getHeight(50)),
+
+          Column(
+            children: const [
+              Text(
+                "You have not made any",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              Text(
+                "Transaction yet",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
