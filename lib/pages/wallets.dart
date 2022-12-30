@@ -1,4 +1,5 @@
 import 'package:flip/pages/parts/balance.dart';
+import 'package:flip/pages/parts/getstarted_options.dart';
 import 'package:flip/pages/parts/header.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,7 @@ class _WalletsPageState extends State<WalletsPage> {
               horizontal: AppLayout.getWidth(17),
             ),
             child: Text(
-              "Get Started",
+              "Get Started 🤌🏿",
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: AppLayout.getHeight(15),
@@ -49,6 +50,7 @@ class _WalletsPageState extends State<WalletsPage> {
 
           // get started options
           Gap(AppLayout.getHeight(30)),
+          const GetStarted(),
         ],
       ),
     );
