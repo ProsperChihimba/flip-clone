@@ -15,6 +15,10 @@ class BalanceSection extends StatelessWidget {
       ),
       child: Container(
         decoration: BoxDecoration(
+          image: const DecorationImage(
+            image: AssetImage('assets/bg.png'),
+            fit: BoxFit.cover,
+          ),
           borderRadius: BorderRadius.circular(
             AppLayout.getHeight(25),
           ),

@@ -30,7 +30,25 @@ class _WalletsPageState extends State<WalletsPage> {
           Gap(AppLayout.getHeight(20)),
           const HomeHeader(),
           Gap(AppLayout.getHeight(20)),
-          const BalanceSection()
+          const BalanceSection(),
+          Gap(AppLayout.getHeight(50)),
+
+          // Getting started text
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: AppLayout.getWidth(17),
+            ),
+            child: Text(
+              "Get Started",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: AppLayout.getHeight(15),
+              ),
+            ),
+          ),
+
+          // get started options
+          Gap(AppLayout.getHeight(30)),
         ],
       ),
     );
