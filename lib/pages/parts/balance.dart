@@ -20,7 +20,7 @@ class BalanceSection extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(
-            AppLayout.getHeight(25),
+            AppLayout.getHeight(28),
           ),
           color: Colors.black,
         ),
@@ -28,7 +28,7 @@ class BalanceSection extends StatelessWidget {
           horizontal: AppLayout.getWidth(20),
           vertical: AppLayout.getHeight(20),
         ),
-        height: AppLayout.getHeight(269),
+        height: AppLayout.getHeight(270),
         child: Column(
           children: [
             // First row
