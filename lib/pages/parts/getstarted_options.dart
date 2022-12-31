@@ -31,6 +31,7 @@ class _GetStartedState extends State<GetStarted> {
               borderRadius: BorderRadius.circular(AppLayout.getHeight(25)),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,6 +53,13 @@ class _GetStartedState extends State<GetStarted> {
                     ),
                   ],
                 ),
+
+                // Image
+                Image(
+                  image: const AssetImage('assets/card.png'),
+                  width: AppLayout.getWidth(80),
+                  height: AppLayout.getHeight(80),
+                )
               ],
             ),
           ),

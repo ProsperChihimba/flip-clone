@@ -16,7 +16,7 @@ class BalanceSection extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage('assets/bg.png'),
+            image: AssetImage('assets/back.png'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(
