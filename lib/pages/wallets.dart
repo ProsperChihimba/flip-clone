@@ -56,21 +56,29 @@ class _WalletsPageState extends State<WalletsPage> {
           Gap(AppLayout.getHeight(50)),
 
           Column(
-            children: const [
-              Text(
+            children: [
+              Image(
+                image: const AssetImage('assets/transaction.png'),
+                height: AppLayout.getHeight(25),
+                width: AppLayout.getWidth(25),
+              ),
+              Gap(AppLayout.getHeight(13)),
+              const Text(
                 "You have not made any",
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              Text(
+              const Text(
                 "Transaction yet",
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                 ),
               ),
             ],
-          )
+          ),
+
+          Gap(AppLayout.getHeight(40)),
         ],
       ),
     );
