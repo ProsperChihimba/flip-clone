@@ -1,6 +1,6 @@
-import 'package:flip/pages/wallet/parts/balance.dart';
-import 'package:flip/pages/wallet/parts/getstarted_options.dart';
-import 'package:flip/pages/wallet/parts/header.dart';
+import 'package:flip/pages/home/wallet/parts/balance.dart';
+import 'package:flip/pages/home/wallet/parts/getstarted_options.dart';
+import 'package:flip/pages/home/wallet/parts/header.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
