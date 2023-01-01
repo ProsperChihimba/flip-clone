@@ -57,6 +57,29 @@ class _SavePageState extends State<SavePage> {
           // Start saving button
           Gap(AppLayout.getHeight(50)),
           const SavingButton(),
+
+          // Swipe left
+          Gap(AppLayout.getHeight(35)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: AppLayout.getHeight(20),
+                width: AppLayout.getWidth(50),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF00008b),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              ),
+              Gap(AppLayout.getWidth(20)),
+              const Text(
+                "Swipe left to Go Back",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
