@@ -1,4 +1,4 @@
-import 'package:flip/pages/wallets.dart';
+import 'package:flip/pages/wallet/wallets.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -33,7 +33,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
         padding: EdgeInsets.only(
           left: AppLayout.getHeight(15),
           right: AppLayout.getHeight(15),
-          bottom: AppLayout.getHeight(10),
+          bottom: AppLayout.getHeight(13),
         ),
         child: SizedBox(
           height: AppLayout.getHeight(70),
