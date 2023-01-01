@@ -1,4 +1,4 @@
-import 'package:flip/pages/home/wallet/wallets.dart';
+import 'package:flip/pages/home/index.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -15,7 +15,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const WalletsPage(),
+    const HomePage(),
     const Text("Home"),
   ];
 
