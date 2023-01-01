@@ -25,7 +25,7 @@ class _GetStartedState extends State<GetStarted> {
               horizontal: AppLayout.getWidth(16),
             ),
             width: size.width * 0.67,
-            height: AppLayout.getHeight(105),
+            height: AppLayout.getHeight(110),
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(AppLayout.getHeight(25)),
@@ -57,8 +57,8 @@ class _GetStartedState extends State<GetStarted> {
                 // Image
                 Image(
                   image: const AssetImage('assets/card.png'),
-                  width: AppLayout.getWidth(80),
-                  height: AppLayout.getHeight(80),
+                  width: AppLayout.getWidth(85),
+                  height: AppLayout.getHeight(85),
                 )
               ],
             ),
@@ -72,7 +72,7 @@ class _GetStartedState extends State<GetStarted> {
               horizontal: AppLayout.getWidth(16),
             ),
             width: size.width * 0.67,
-            height: AppLayout.getHeight(105),
+            height: AppLayout.getHeight(110),
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 58, 33, 243),
               borderRadius: BorderRadius.circular(AppLayout.getHeight(25)),

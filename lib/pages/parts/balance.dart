@@ -28,7 +28,7 @@ class BalanceSection extends StatelessWidget {
           horizontal: AppLayout.getWidth(20),
           vertical: AppLayout.getHeight(20),
         ),
-        height: AppLayout.getHeight(270),
+        height: AppLayout.getHeight(290),
         child: Column(
           children: [
             // First row
@@ -75,7 +75,7 @@ class BalanceSection extends StatelessWidget {
             ),
 
             // Second row
-            Gap(AppLayout.getHeight(20)),
+            Gap(AppLayout.getHeight(30)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -102,7 +102,7 @@ class BalanceSection extends StatelessWidget {
             ),
 
             // Third row
-            Gap(AppLayout.getHeight(30)),
+            Gap(AppLayout.getHeight(38)),
             Text(
               "NGN 0",
               style: TextStyle(
@@ -113,7 +113,7 @@ class BalanceSection extends StatelessWidget {
             ),
 
             // Forth row
-            Gap(AppLayout.getHeight(25)),
+            Gap(AppLayout.getHeight(30)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

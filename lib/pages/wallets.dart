@@ -28,11 +28,11 @@ class _WalletsPageState extends State<WalletsPage> {
       ),
       child: ListView(
         children: [
-          Gap(AppLayout.getHeight(20)),
+          Gap(AppLayout.getHeight(30)),
           const HomeHeader(),
-          Gap(AppLayout.getHeight(20)),
+          Gap(AppLayout.getHeight(25)),
           const BalanceSection(),
-          Gap(AppLayout.getHeight(50)),
+          Gap(AppLayout.getHeight(55)),
 
           // Getting started text
           Padding(
@@ -49,11 +49,11 @@ class _WalletsPageState extends State<WalletsPage> {
           ),
 
           // get started options
-          Gap(AppLayout.getHeight(30)),
+          Gap(AppLayout.getHeight(35)),
           const GetStarted(),
 
           // Transactions section
-          Gap(AppLayout.getHeight(50)),
+          Gap(AppLayout.getHeight(53)),
 
           Column(
             children: [
