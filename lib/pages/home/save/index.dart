@@ -1,4 +1,5 @@
 import 'package:flip/pages/home/save/profiits.dart';
+import 'package:flip/pages/home/save/savingButton.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -52,6 +53,10 @@ class _SavePageState extends State<SavePage> {
           // Profits section
           Gap(AppLayout.getHeight(35)),
           const SavingsProfit(),
+
+          // Start saving button
+          Gap(AppLayout.getHeight(50)),
+          const SavingButton(),
         ],
       ),
     );
