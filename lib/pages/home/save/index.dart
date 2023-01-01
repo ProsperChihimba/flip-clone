@@ -1,3 +1,4 @@
+import 'package:flip/pages/home/save/profiits.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -19,7 +20,7 @@ class _SavePageState extends State<SavePage> {
           end: Alignment(0.9, -0.4),
           colors: [
             Color.fromARGB(255, 161, 193, 248),
-            Color.fromARGB(255, 247, 210, 248),
+            Color.fromARGB(255, 244, 215, 245),
             Colors.white,
           ],
         ),
@@ -37,7 +38,20 @@ class _SavePageState extends State<SavePage> {
             width: AppLayout.getWidth(180),
           ),
 
-          //
+          //saving text
+          Gap(AppLayout.getHeight(25)),
+          Text(
+            "Dollar Savings with USDT",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: AppLayout.getHeight(19),
+            ),
+          ),
+
+          // Profits section
+          Gap(AppLayout.getHeight(35)),
+          const SavingsProfit(),
         ],
       ),
     );
