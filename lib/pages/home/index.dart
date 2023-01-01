@@ -1,5 +1,5 @@
 import 'package:flip/pages/home/save/index.dart';
-import 'package:flip/pages/home/wallet/wallets.dart';
+import 'package:flip/pages/home/wallet/index.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
