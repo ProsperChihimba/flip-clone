@@ -17,6 +17,8 @@ class _BottomBarSectionState extends State<BottomBarSection> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
     const Text("Home"),
+    const Text("Home"),
+    const Text("Home"),
   ];
 
   void _onItemTapped(int index) {
@@ -48,20 +50,15 @@ class _BottomBarSectionState extends State<BottomBarSection> {
               showSelectedLabels: true,
               showUnselectedLabels: true,
               selectedItemColor: Colors.black,
-              unselectedItemColor: Colors.grey.shade500,
+              unselectedItemColor: Colors.black,
               unselectedLabelStyle: Styles.normalText.copyWith(
-                color: Colors.grey.shade500,
+                color: Colors.black,
                 fontSize: AppLayout.getHeight(12),
-              ),
-              selectedLabelStyle: Styles.normalText.copyWith(
-                color: const Color(0xFFF6A414),
-                fontSize: AppLayout.getHeight(12),
-                fontWeight: FontWeight.w500,
               ),
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(
-                    Icons.account_balance_wallet_rounded,
+                    Icons.account_balance_wallet_outlined,
                     size: AppLayout.getHeight(22),
                   ),
                   label: "Wallets",
@@ -77,7 +74,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
                   ),
                   label: "Cards",
                   activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_payment_regular,
+                    FluentSystemIcons.ic_fluent_payment_filled,
                     size: AppLayout.getHeight(22),
                   ),
                 ),
@@ -88,7 +85,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
                   ),
                   label: "Payments",
                   activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_document_copy_regular,
+                    FluentSystemIcons.ic_fluent_document_copy_filled,
                     size: AppLayout.getHeight(22),
                   ),
                 ),
@@ -99,7 +96,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
                   ),
                   label: "Account",
                   activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_person_regular,
+                    FluentSystemIcons.ic_fluent_person_filled,
                     size: AppLayout.getHeight(22),
                   ),
                 ),

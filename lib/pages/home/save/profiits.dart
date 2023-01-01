@@ -45,6 +45,7 @@ class Profits extends StatelessWidget {
   final String header;
   final String description;
   final IconData profitIcon;
+
   const Profits({
     super.key,
     required this.description,
