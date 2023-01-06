@@ -47,6 +47,32 @@ class _BalanceSelectionState extends State<BalanceSelection> {
               ),
             ),
           ],
+        ),
+
+        // amount in ngn
+        Text(
+          "N 5,738.56",
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: AppLayout.getHeight(17),
+          ),
+        ),
+
+        // switch assets
+        Gap(AppLayout.getHeight(10)),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Switch Asset",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: AppLayout.getHeight(15),
+              ),
+            ),
+            Gap(AppLayout.getWidth(5)),
+            const Icon(FluentSystemIcons.ic_fluent_arrow_up_circle_filled)
+          ],
         )
       ],
     );
