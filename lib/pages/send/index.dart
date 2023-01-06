@@ -4,8 +4,7 @@ import 'package:flip/pages/send/navigation.dart';
 import 'package:flip/pages/send/walletBalance.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
-import '../../utils/app_layout.dart';
+import 'package:flip/utils/app_layout.dart';
 
 class SendMoney extends StatefulWidget {
   const SendMoney({super.key});
@@ -38,9 +37,9 @@ class _SendMoneyState extends State<SendMoney> {
             const BalanceSelection(),
 
             // Withdraw button
-            Gap(AppLayout.getHeight(80)),
+            Gap(AppLayout.getHeight(75)),
             Container(
-              padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(18)),
+              padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(20)),
               //
               decoration: BoxDecoration(
                 color: Colors.black,
