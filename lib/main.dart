@@ -1,5 +1,6 @@
 import 'package:flip/bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const FlipApp());
@@ -11,7 +12,7 @@ class FlipApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flip clone application',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

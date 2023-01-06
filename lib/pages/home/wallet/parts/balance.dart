@@ -1,8 +1,10 @@
+import 'package:flip/pages/send/index.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 
 class BalanceSection extends StatelessWidget {
   const BalanceSection({super.key});
@@ -159,40 +161,45 @@ class BalanceSection extends StatelessWidget {
                 ),
 
                 // Second button
-                Container(
-                  padding: EdgeInsets.symmetric(
-                    vertical: AppLayout.getHeight(15),
-                    horizontal: AppLayout.getWidth(26),
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.transparent,
-                    border: Border.all(
-                      width: AppLayout.getHeight(2),
-                      color: Colors.white,
+                InkWell(
+                  onTap: () {
+                    Get.to(const SendMoney());
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getHeight(15),
+                      horizontal: AppLayout.getWidth(26),
                     ),
-                    borderRadius:
-                        BorderRadius.circular(AppLayout.getHeight(25)),
-                  ),
-                  child: Row(
-                    children: [
-                      Transform.rotate(
-                        angle: -0.6,
-                        child: Icon(
-                          FluentSystemIcons.ic_fluent_send_filled,
-                          size: AppLayout.getHeight(15),
-                          color: Colors.white,
-                        ),
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        width: AppLayout.getHeight(2),
+                        color: Colors.white,
                       ),
-                      Gap(AppLayout.getWidth(10)),
-                      Text(
-                        "Send Money",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: AppLayout.getHeight(12),
-                          fontWeight: FontWeight.w500,
+                      borderRadius:
+                          BorderRadius.circular(AppLayout.getHeight(25)),
+                    ),
+                    child: Row(
+                      children: [
+                        Transform.rotate(
+                          angle: -0.6,
+                          child: Icon(
+                            FluentSystemIcons.ic_fluent_send_filled,
+                            size: AppLayout.getHeight(15),
+                            color: Colors.white,
+                          ),
                         ),
-                      )
-                    ],
+                        Gap(AppLayout.getWidth(10)),
+                        Text(
+                          "Send Money",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: AppLayout.getHeight(12),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
