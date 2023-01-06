@@ -34,10 +34,11 @@ class _SendMoneyState extends State<SendMoney> {
             const NavigationSection(),
 
             // Balance view
+            Gap(AppLayout.getHeight(5)),
             const BalanceSelection(),
 
             // Withdraw button
-            Gap(AppLayout.getHeight(100)),
+            Gap(AppLayout.getHeight(80)),
             Container(
               padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(18)),
               //
@@ -62,7 +63,7 @@ class _SendMoneyState extends State<SendMoney> {
 
       // keyboard
       bottomNavigationBar: SizedBox(
-        height: size.height * 0.47,
+        height: size.height * 0.48,
         child: Stack(
           children: const [
             Align(

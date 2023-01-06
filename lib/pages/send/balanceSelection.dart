@@ -50,6 +50,7 @@ class _BalanceSelectionState extends State<BalanceSelection> {
         ),
 
         // amount in ngn
+        Gap(AppLayout.getHeight(5)),
         Text(
           "N 5,738.56",
           style: TextStyle(
