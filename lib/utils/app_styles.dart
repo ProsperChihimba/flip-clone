@@ -10,4 +10,10 @@ class Styles {
     fontFamily: 'ClashDisplay',
     fontSize: AppLayout.getHeight(13),
   );
+
+  // number style
+  static TextStyle numberStyle = TextStyle(
+    fontSize: AppLayout.getHeight(40),
+    fontWeight: FontWeight.w500,
+  );
 }
