@@ -1,6 +1,7 @@
 import 'package:flip/utils/app_layout.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class NavigationSection extends StatelessWidget {
   const NavigationSection({super.key});
@@ -10,18 +11,23 @@ class NavigationSection extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          padding: EdgeInsets.all(AppLayout.getHeight(3.5)),
-          decoration: BoxDecoration(
-            border: Border.all(
-              width: AppLayout.getHeight(1.5),
+        InkWell(
+          onTap: () {
+            Get.back();
+          },
+          child: Container(
+            padding: EdgeInsets.all(AppLayout.getHeight(3.5)),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: AppLayout.getHeight(1.5),
+              ),
+              borderRadius: BorderRadius.circular(AppLayout.getHeight(20)),
             ),
-            borderRadius: BorderRadius.circular(AppLayout.getHeight(20)),
-          ),
-          child: Icon(
-            FluentSystemIcons.ic_fluent_arrow_left_filled,
-            size: AppLayout.getHeight(15),
-            color: Colors.grey.shade600,
+            child: Icon(
+              FluentSystemIcons.ic_fluent_arrow_left_filled,
+              size: AppLayout.getHeight(15),
+              color: Colors.grey.shade600,
+            ),
           ),
         ),
 
