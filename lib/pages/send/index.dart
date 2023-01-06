@@ -1,4 +1,6 @@
+import 'package:flip/pages/send/navigation.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../../utils/app_layout.dart';
 
@@ -17,6 +19,16 @@ class _SendMoneyState extends State<SendMoney> {
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: AppLayout.getWidth(17),
+        ),
+
+        //
+        child: ListView(
+          children: [
+            Gap(AppLayout.getHeight(30)),
+
+            // navigation section
+            const NavigationSection(),
+          ],
         ),
       ),
     );
