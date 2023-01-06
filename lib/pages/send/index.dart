@@ -33,6 +33,27 @@ class _SendMoneyState extends State<SendMoney> {
 
             // Balance view
             const BalanceSelection(),
+
+            // Withdraw button
+            Gap(AppLayout.getHeight(90)),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(18)),
+              //
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(30),
+              ),
+
+              child: Text(
+                "Withdraw",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                  fontSize: AppLayout.getHeight(16),
+                ),
+              ),
+            ),
           ],
         ),
       ),
