@@ -1,6 +1,7 @@
 import 'package:flip/pages/send/balanceSelection.dart';
 import 'package:flip/pages/send/keyboard.dart';
 import 'package:flip/pages/send/navigation.dart';
+import 'package:flip/pages/send/walletBalance.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -16,6 +17,7 @@ class SendMoney extends StatefulWidget {
 class _SendMoneyState extends State<SendMoney> {
   @override
   Widget build(BuildContext context) {
+    final size = AppLayout.getSize(context);
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 148, 253, 166),
       body: Padding(
@@ -35,7 +37,7 @@ class _SendMoneyState extends State<SendMoney> {
             const BalanceSelection(),
 
             // Withdraw button
-            Gap(AppLayout.getHeight(90)),
+            Gap(AppLayout.getHeight(100)),
             Container(
               padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(18)),
               //
@@ -59,7 +61,21 @@ class _SendMoneyState extends State<SendMoney> {
       ),
 
       // keyboard
-      bottomNavigationBar: const CUstomKeyboard(),
+      bottomNavigationBar: SizedBox(
+        height: size.height * 0.47,
+        child: Stack(
+          children: const [
+            Align(
+              alignment: AlignmentDirectional.bottomCenter,
+              child: CUstomKeyboard(),
+            ),
+            Align(
+              alignment: AlignmentDirectional.topCenter,
+              child: WalletBalance(),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
