@@ -1,3 +1,4 @@
+import 'package:flip/pages/send/balanceSelection.dart';
 import 'package:flip/pages/send/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -28,6 +29,9 @@ class _SendMoneyState extends State<SendMoney> {
 
             // navigation section
             const NavigationSection(),
+
+            // Balance view
+            const BalanceSelection(),
           ],
         ),
       ),
