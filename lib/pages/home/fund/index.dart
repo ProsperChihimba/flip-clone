@@ -1,3 +1,4 @@
+import 'package:flip/pages/home/send/index.dart';
 import 'package:flip/sections/paymentOptions.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -59,6 +60,7 @@ class _FundModalState extends State<FundModal> {
             header: 'Crypto Address',
             desc: 'Fund your wallet from a crypto address',
             soon: false,
+            navigate: SendMoney(),
           ),
 
           // FLuidcoin option
@@ -67,6 +69,7 @@ class _FundModalState extends State<FundModal> {
             header: 'Fluidcoins',
             desc: 'Fund your wallet with Fluidcoins',
             soon: false,
+            navigate: SendMoney(),
           ),
 
           // mono option
@@ -75,6 +78,7 @@ class _FundModalState extends State<FundModal> {
             header: 'Fund from your bank',
             desc: 'Pay from your bank with Mono',
             soon: true,
+            navigate: SendMoney(),
           ),
 
           // thepeer option
@@ -83,6 +87,7 @@ class _FundModalState extends State<FundModal> {
             header: 'Thepeer',
             desc: 'Send money to your Flip Wallet via Thepeer',
             soon: false,
+            navigate: SendMoney(),
           ),
 
           // usd option
@@ -91,6 +96,7 @@ class _FundModalState extends State<FundModal> {
             header: 'USD Deposit',
             desc: 'Deposit USD from bank',
             soon: true,
+            navigate: SendMoney(),
           ),
         ],
       ),

@@ -17,8 +17,8 @@ class _BottomBarSectionState extends State<BottomBarSection> {
 
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
-    const PaymentsPage(),
     const Text("Home"),
+    const PaymentsPage(),
     const Text("Home"),
   ];
 

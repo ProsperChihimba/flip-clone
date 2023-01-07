@@ -1,3 +1,5 @@
+import 'package:flip/pages/home/send/index.dart';
+import 'package:flip/pages/payments/airtime/index.dart';
 import 'package:flip/sections/paymentOptions.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +42,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
               header: 'Buy Airtime',
               desc: 'Buy airtime directly from your Spend wallet',
               soon: false,
+              navigate: AirtimeScreen(),
             ),
 
             //
@@ -48,6 +51,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
               header: 'Utility Shop',
               desc: 'Coming soon!',
               soon: false,
+              navigate: SendMoney(),
             ),
 
             //
@@ -56,6 +60,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
               header: 'Merchant Directory',
               desc: 'Coming soon!',
               soon: false,
+              navigate: SendMoney(),
             ),
           ],
         ),

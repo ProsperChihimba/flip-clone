@@ -3,14 +3,14 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class WalletScreen extends StatefulWidget {
-  const WalletScreen({super.key});
+class AirtimeScreen extends StatefulWidget {
+  const AirtimeScreen({super.key});
 
   @override
-  State<WalletScreen> createState() => _WalletScreenState();
+  State<AirtimeScreen> createState() => _AirtimeScreenState();
 }
 
-class _WalletScreenState extends State<WalletScreen> {
+class _AirtimeScreenState extends State<AirtimeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
