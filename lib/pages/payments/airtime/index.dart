@@ -27,7 +27,25 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
               hasHeader: false,
             ),
 
-            //
+            // header
+            Gap(AppLayout.getHeight(30)),
+            Text(
+              "Airtime",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: AppLayout.getHeight(25),
+              ),
+            ),
+
+            // Description
+            Gap(AppLayout.getHeight(5)),
+            Text(
+              "Spend Wallet Balance - NGN 0",
+              style: TextStyle(
+                fontSize: AppLayout.getHeight(13),
+                color: Colors.grey.shade400,
+              ),
+            )
           ],
         ),
       ),
