@@ -1,5 +1,5 @@
 import 'package:flip/pages/home/send/balanceSelection.dart';
-import 'package:flip/pages/home/send/keyboard.dart';
+import 'package:flip/sections/keyboard.dart';
 import 'package:flip/pages/home/send/navigation.dart';
 import 'package:flip/pages/home/send/walletBalance.dart';
 import 'package:flutter/material.dart';
