@@ -25,7 +25,7 @@ class NavigationSection extends StatelessWidget {
             padding: EdgeInsets.all(AppLayout.getHeight(3.5)),
             decoration: BoxDecoration(
               border: Border.all(
-                width: AppLayout.getHeight(1.5),
+                width: AppLayout.getHeight(1.8),
               ),
               borderRadius: BorderRadius.circular(AppLayout.getHeight(20)),
             ),

@@ -1,3 +1,4 @@
+import 'package:flip/pages/payments/airtime/chooseProvider.dart';
 import 'package:flip/sections/navigation.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(17)),
+        padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(18)),
         child: ListView(
           children: [
             Gap(AppLayout.getHeight(25)),
@@ -45,7 +46,11 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
                 fontSize: AppLayout.getHeight(13),
                 color: Colors.grey.shade400,
               ),
-            )
+            ),
+
+            // choose provider section
+            Gap(AppLayout.getHeight(20)),
+            const ChooseProvider(),
           ],
         ),
       ),
