@@ -1,6 +1,6 @@
 import 'package:flip/pages/home/send/balanceSelection.dart';
 import 'package:flip/sections/keyboard.dart';
-import 'package:flip/pages/home/send/navigation.dart';
+import 'package:flip/sections/navigation.dart';
 import 'package:flip/pages/home/send/walletBalance.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -30,7 +30,10 @@ class _SendMoneyState extends State<SendMoney> {
             Gap(AppLayout.getHeight(30)),
 
             // navigation section
-            const NavigationSection(),
+            const NavigationSection(
+              header: "Withdraw",
+              hasHeader: true,
+            ),
 
             // Balance view
             Gap(AppLayout.getHeight(5)),

@@ -4,7 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class NavigationSection extends StatelessWidget {
-  const NavigationSection({super.key});
+  final String header;
+  final bool hasHeader;
+  const NavigationSection({
+    super.key,
+    required this.hasHeader,
+    required this.header,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +38,16 @@ class NavigationSection extends StatelessWidget {
         ),
 
         //
-        Text(
-          "Withdraw",
-          style: TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: AppLayout.getHeight(17),
-          ),
-        ),
+        hasHeader == true
+            ? Text(
+                header,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: AppLayout.getHeight(17),
+                ),
+              )
+            : Container(),
+        //
         Container()
       ],
     );
