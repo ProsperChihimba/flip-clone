@@ -1,3 +1,4 @@
+import 'package:flip/pages/home/fund/index.dart';
 import 'package:flip/pages/home/send/index.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
@@ -120,43 +121,58 @@ class BalanceSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 // First button
-                Container(
-                  padding: EdgeInsets.symmetric(
-                    vertical: AppLayout.getHeight(15),
-                    horizontal: AppLayout.getWidth(26),
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:
-                        BorderRadius.circular(AppLayout.getHeight(25)),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.all(
-                          AppLayout.getHeight(1.0),
-                        ),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF00008b),
-                          borderRadius: BorderRadius.circular(
-                            AppLayout.getHeight(25),
-                          ),
-                        ),
-                        child: Icon(
-                          Icons.add,
-                          size: AppLayout.getHeight(15),
-                          color: Styles.greenColor,
+                InkWell(
+                  onTap: () {
+                    // fund wallet modal
+                    showModalBottomSheet(
+                      isScrollControlled: true,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(AppLayout.getHeight(30)),
                         ),
                       ),
-                      Gap(AppLayout.getWidth(10)),
-                      Text(
-                        "Fund Wallet",
-                        style: TextStyle(
-                          fontSize: AppLayout.getHeight(12),
-                          fontWeight: FontWeight.w500,
+                      context: context,
+                      builder: (context) => const FundModal(),
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getHeight(15),
+                      horizontal: AppLayout.getWidth(26),
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:
+                          BorderRadius.circular(AppLayout.getHeight(25)),
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(
+                            AppLayout.getHeight(1.0),
+                          ),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF00008b),
+                            borderRadius: BorderRadius.circular(
+                              AppLayout.getHeight(25),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.add,
+                            size: AppLayout.getHeight(15),
+                            color: Styles.greenColor,
+                          ),
                         ),
-                      )
-                    ],
+                        Gap(AppLayout.getWidth(10)),
+                        Text(
+                          "Fund Wallet",
+                          style: TextStyle(
+                            fontSize: AppLayout.getHeight(12),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
 

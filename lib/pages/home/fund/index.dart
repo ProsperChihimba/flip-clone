@@ -10,6 +10,11 @@ class FundModal extends StatefulWidget {
 class _FundModalState extends State<FundModal> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text("kddldlldllkmm cbovdnbxbwe vdas  xzjj"),
+      ],
+    );
   }
 }
