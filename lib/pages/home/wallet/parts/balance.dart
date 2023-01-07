@@ -128,7 +128,7 @@ class BalanceSection extends StatelessWidget {
                       isScrollControlled: true,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.vertical(
-                          top: Radius.circular(AppLayout.getHeight(30)),
+                          top: Radius.circular(AppLayout.getHeight(40)),
                         ),
                       ),
                       context: context,
