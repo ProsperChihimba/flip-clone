@@ -1,4 +1,5 @@
 import 'package:flip/pages/home/index.dart';
+import 'package:flip/pages/payments/index.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flip/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -16,7 +17,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
 
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
-    const Text("Home"),
+    const PaymentsPage(),
     const Text("Home"),
     const Text("Home"),
   ];
