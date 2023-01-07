@@ -1,4 +1,5 @@
 import 'package:flip/pages/payments/airtime/chooseProvider.dart';
+import 'package:flip/pages/payments/airtime/quickAmount.dart';
 import 'package:flip/sections/navigation.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -51,6 +52,10 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
             // choose provider section
             Gap(AppLayout.getHeight(20)),
             const ChooseProvider(),
+
+            // quick amounts
+            Gap(AppLayout.getHeight(40)),
+            const QuickAmounts(),
           ],
         ),
       ),
