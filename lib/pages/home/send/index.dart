@@ -1,7 +1,7 @@
-import 'package:flip/pages/home/send/balanceSelection.dart';
+import 'package:flip/pages/home/send/balance_selection.dart';
 import 'package:flip/sections/keyboard.dart';
 import 'package:flip/sections/navigation.dart';
-import 'package:flip/pages/home/send/walletBalance.dart';
+import 'package:flip/pages/home/send/wallet_balance.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:flip/utils/app_layout.dart';

@@ -1,5 +1,5 @@
-import 'package:flip/pages/payments/airtime/chooseProvider.dart';
-import 'package:flip/pages/payments/airtime/quickAmount.dart';
+import 'package:flip/pages/payments/airtime/choose_provider.dart';
+import 'package:flip/pages/payments/airtime/quick_amount.dart';
 import 'package:flip/sections/navigation.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
