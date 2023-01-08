@@ -12,6 +12,7 @@ class CardsPage extends StatefulWidget {
 class _CardsPageState extends State<CardsPage> {
   @override
   Widget build(BuildContext context) {
+    final size = AppLayout.getSize(context);
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
@@ -45,6 +46,26 @@ class _CardsPageState extends State<CardsPage> {
           ),
 
           // button
+          Gap(AppLayout.getHeight(35)),
+
+          Container(
+            padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(18)),
+            width: size.width * 0.48,
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: AppLayout.getWidth(3),
+                color: const Color(0xFFa8ff79),
+              ),
+              borderRadius: BorderRadius.circular(AppLayout.getHeight(30)),
+            ),
+            child: const Text(
+              "Create Card",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          )
         ],
       ),
     );
