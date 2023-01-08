@@ -3,8 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
-class UtilityShop extends StatelessWidget {
-  const UtilityShop({super.key});
+class CommingSoonPage extends StatelessWidget {
+  final String header;
+  final String firstDesc;
+  final String secondDesc;
+  const CommingSoonPage({
+    super.key,
+    required this.firstDesc,
+    required this.header,
+    required this.secondDesc,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +31,7 @@ class UtilityShop extends StatelessWidget {
 
           // header
           Text(
-            "Utility Shop is Coming",
+            header,
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: AppLayout.getHeight(17),
@@ -33,7 +41,7 @@ class UtilityShop extends StatelessWidget {
           // Desc one
           Gap(AppLayout.getHeight(10)),
           Text(
-            "Pay your favourite online vendors in a flash",
+            firstDesc,
             style: TextStyle(
               color: Colors.grey.shade500,
               fontSize: AppLayout.getHeight(11.5),
@@ -42,7 +50,7 @@ class UtilityShop extends StatelessWidget {
 
           // Desc two
           Text(
-            "Coming soo, we're still cooking",
+            secondDesc,
             style: TextStyle(
               color: Colors.grey.shade500,
               fontSize: AppLayout.getHeight(11.5),
