@@ -1,4 +1,3 @@
-import 'package:flip/pages/home/send/index.dart';
 import 'package:flip/pages/payments/airtime/index.dart';
 import 'package:flip/sections/payment_options.dart';
 import 'package:flip/utils/app_layout.dart';

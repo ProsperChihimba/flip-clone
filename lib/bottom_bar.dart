@@ -1,3 +1,4 @@
+import 'package:flip/pages/cards/index.dart';
 import 'package:flip/pages/home/index.dart';
 import 'package:flip/pages/payments/index.dart';
 import 'package:flip/utils/app_layout.dart';
@@ -17,7 +18,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
 
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
-    const Text("Home"),
+    const CardsPage(),
     const PaymentsPage(),
     const Text("Home"),
   ];
