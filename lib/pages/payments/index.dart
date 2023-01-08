@@ -1,8 +1,8 @@
 import 'package:flip/pages/home/send/index.dart';
 import 'package:flip/pages/payments/airtime/index.dart';
-import 'package:flip/pages/payments/utility/index.dart';
 import 'package:flip/sections/payment_options.dart';
 import 'package:flip/utils/app_layout.dart';
+import 'package:flip/utils/comming_soon.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -46,22 +46,30 @@ class _PaymentsPageState extends State<PaymentsPage> {
               navigate: AirtimeScreen(),
             ),
 
-            //
+            //utility shop
             const PaymentOptions(
               image: 'fluidcoins.jpeg',
               header: 'Utility Shop',
               desc: 'Coming soon!',
               soon: false,
-              navigate: UtilityShop(),
+              navigate: CommingSoonPage(
+                header: "Utility Shop is Coming",
+                firstDesc: "Pay your favourite online vendors in a flash",
+                secondDesc: "Coming soon, we're still cooking",
+              ),
             ),
 
-            //
+            // merchant directory
             const PaymentOptions(
               image: 'fluidcoins.jpeg',
               header: 'Merchant Directory',
               desc: 'Coming soon!',
               soon: false,
-              navigate: SendMoney(),
+              navigate: CommingSoonPage(
+                header: "Merchant Directory is Coming",
+                firstDesc: "Pay your favourite online vendors in a flash",
+                secondDesc: "Coming soon, we're still cooking",
+              ),
             ),
           ],
         ),
