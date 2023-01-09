@@ -1,5 +1,6 @@
 import 'package:flip/pages/payments/airtime/amount.dart';
 import 'package:flip/pages/payments/airtime/choose_provider.dart';
+import 'package:flip/pages/payments/airtime/phone_number.dart';
 import 'package:flip/pages/payments/airtime/quick_amount.dart';
 import 'package:flip/sections/navigation.dart';
 import 'package:flip/utils/app_layout.dart';
@@ -53,6 +54,10 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
             // choose provider section
             Gap(AppLayout.getHeight(20)),
             const ChooseProvider(),
+
+            // contact
+            Gap(AppLayout.getHeight(20)),
+            const PhoneNumber(),
 
             // amout
             Gap(AppLayout.getHeight(20)),
