@@ -1,4 +1,5 @@
 import 'package:flip/pages/account/header.dart';
+import 'package:flip/sections/green_button.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -25,6 +26,13 @@ class _AccountPageState extends State<AccountPage> {
 
             // header
             const AccountHeader(),
+
+            // account verification button
+            Gap(AppLayout.getHeight(30)),
+            const GreenButton(
+              title: "Verify Account",
+              size: 17,
+            ),
           ],
         ),
       ),

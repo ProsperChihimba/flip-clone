@@ -78,7 +78,10 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
           right: AppLayout.getWidth(18),
           left: AppLayout.getWidth(18),
         ),
-        child: const GreenButton(title: "Proceed"),
+        child: const GreenButton(
+          title: "Proceed",
+          size: 22,
+        ),
       ),
     );
   }

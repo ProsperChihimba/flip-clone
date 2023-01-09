@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 
 class GreenButton extends StatelessWidget {
   final String title;
-  const GreenButton({super.key, required this.title});
+  final double size;
+  const GreenButton({super.key, required this.title, required this.size});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(20)),
+      padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(size)),
       //
       decoration: BoxDecoration(
         gradient: const LinearGradient(
