@@ -1,3 +1,4 @@
+import 'package:flip/pages/account/index.dart';
 import 'package:flip/pages/cards/index.dart';
 import 'package:flip/pages/home/index.dart';
 import 'package:flip/pages/payments/index.dart';
@@ -20,7 +21,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
     const HomePage(),
     const CardsPage(),
     const PaymentsPage(),
-    const Text("Home"),
+    const AccountPage(),
   ];
 
   void _onItemTapped(int index) {
