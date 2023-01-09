@@ -63,6 +63,7 @@ class _SavePageState extends State<SavePage> {
             child: const GreenButton(
               title: "Start Saving",
               size: 20,
+              hasIcon: false,
             ),
           ),
 

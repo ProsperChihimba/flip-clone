@@ -2,7 +2,6 @@ import 'package:flip/pages/payments/airtime/amount.dart';
 import 'package:flip/pages/payments/airtime/choose_provider.dart';
 import 'package:flip/pages/payments/airtime/phone_number.dart';
 import 'package:flip/pages/payments/airtime/quick_amount.dart';
-import 'package:flip/sections/green_button.dart';
 import 'package:flip/sections/navigation.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -78,9 +77,26 @@ class _AirtimeScreenState extends State<AirtimeScreen> {
           right: AppLayout.getWidth(18),
           left: AppLayout.getWidth(18),
         ),
-        child: const GreenButton(
-          title: "Proceed",
-          size: 22,
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(23)),
+          //
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [
+                Color.fromARGB(255, 81, 235, 107),
+                Color.fromARGB(255, 207, 255, 160),
+              ],
+            ),
+            borderRadius: BorderRadius.circular(30),
+          ),
+
+          child: const Text(
+            "Proceed",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ),
       ),
     );

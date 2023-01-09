@@ -32,6 +32,7 @@ class _AccountPageState extends State<AccountPage> {
             const GreenButton(
               title: "Verify Account",
               size: 17,
+              hasIcon: true,
             ),
           ],
         ),
