@@ -1,4 +1,5 @@
 import 'package:flip/pages/account/header.dart';
+import 'package:flip/pages/account/invite_button.dart';
 import 'package:flip/sections/green_button.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,10 @@ class _AccountPageState extends State<AccountPage> {
               size: 17,
               hasIcon: true,
             ),
+
+            // Invite friend
+            Gap(AppLayout.getHeight(15)),
+            const InviteButton(),
           ],
         ),
       ),
