@@ -47,7 +47,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
 
             //utility shop
             const PaymentOptions(
-              image: 'fluidcoins.jpeg',
+              image: 'shop.png',
               header: 'Utility Shop',
               desc: 'Coming soon!',
               soon: false,
@@ -60,7 +60,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
 
             // merchant directory
             const PaymentOptions(
-              image: 'fluidcoins.jpeg',
+              image: 'utility.png',
               header: 'Merchant Directory',
               desc: 'Coming soon!',
               soon: false,

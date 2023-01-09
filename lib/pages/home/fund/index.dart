@@ -92,7 +92,7 @@ class _FundModalState extends State<FundModal> {
 
           // usd option
           const PaymentOptions(
-            image: 'transaction.png',
+            image: 'usd.png',
             header: 'USD Deposit',
             desc: 'Deposit USD from bank',
             soon: true,
