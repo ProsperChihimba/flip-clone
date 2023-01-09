@@ -22,7 +22,7 @@ class _AccountHeaderState extends State<AccountHeader> {
               width: AppLayout.getWidth(85),
               height: AppLayout.getHeight(85),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppLayout.getHeight(28)),
+                borderRadius: BorderRadius.circular(AppLayout.getHeight(30)),
                 gradient: const LinearGradient(
                   colors: [
                     Color.fromARGB(255, 81, 235, 107),
