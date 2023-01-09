@@ -1,5 +1,5 @@
 import 'package:flip/pages/home/save/profits.dart';
-import 'package:flip/pages/home/save/saving_button.dart';
+import 'package:flip/sections/green_button.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -56,7 +56,14 @@ class _SavePageState extends State<SavePage> {
 
           // Start saving button
           Gap(AppLayout.getHeight(50)),
-          const SavingButton(),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: AppLayout.getWidth(18),
+            ),
+            child: const GreenButton(
+              title: "Start Saving",
+            ),
+          ),
 
           // Swipe left
           Gap(AppLayout.getHeight(35)),
