@@ -1,3 +1,4 @@
+import 'package:flip/sections/green_button.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -30,8 +31,40 @@ class VerifyAccountModal extends StatelessWidget {
             image: const AssetImage(
               'assets/card.png',
             ),
-            width: AppLayout.getWidth(180),
+            width: AppLayout.getWidth(150),
           ),
+
+          // header
+          Gap(AppLayout.getHeight(20)),
+          Text(
+            "Verify Account",
+            style: TextStyle(
+              fontSize: AppLayout.getHeight(20),
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+
+          // desc
+          Gap(AppLayout.getHeight(10)),
+          Text(
+            "We need to verify your account KYC verification can take between 12-72 hours to complete.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.grey.withOpacity(0.9),
+              fontSize: AppLayout.getHeight(12),
+            ),
+          ),
+
+          // get started button
+          Gap(AppLayout.getHeight(30)),
+          const GreenButton(
+            title: "Get Started",
+            size: 21,
+            hasIcon: false,
+          ),
+
+          //
+          Gap(AppLayout.getHeight(30)),
         ],
       ),
     );
