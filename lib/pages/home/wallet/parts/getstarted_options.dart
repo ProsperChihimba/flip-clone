@@ -104,33 +104,32 @@ class _GetStartedState extends State<GetStarted> {
                 ),
 
                 // second container
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
+                SizedBox(
+                  width: size.width * 0.25,
                   height: AppLayout.getHeight(110),
-                  child: Row(
+                  child: Stack(
                     children: [
+                      // first stack
                       Stack(
                         alignment: Alignment.center,
                         children: [
                           Align(
-                            alignment: Alignment.center,
+                            alignment: Alignment.centerLeft,
                             child: Image(
                               image: const AssetImage("assets/spotify.PNG"),
                               width: AppLayout.getHeight(60),
                             ),
                           ),
                           Positioned(
-                            top: -30,
-                            left: 8,
+                            top: AppLayout.getHeight(-30),
+                            left: AppLayout.getWidth(20),
                             child: Image(
                               image: const AssetImage("assets/tube.PNG"),
                               width: AppLayout.getHeight(50),
                             ),
                           ),
                           Positioned(
-                            bottom: -10,
+                            bottom: AppLayout.getHeight(-10),
                             child: Image(
                               image: const AssetImage("assets/itune.PNG"),
                               width: AppLayout.getHeight(35),
@@ -138,6 +137,24 @@ class _GetStartedState extends State<GetStarted> {
                           ),
                         ],
                       ),
+
+                      // second stack
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: const AssetImage("assets/netflix.PNG"),
+                              width: AppLayout.getHeight(40),
+                            ),
+                            Image(
+                              image: const AssetImage("assets/vivo.PNG"),
+                              width: AppLayout.getHeight(40),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )
