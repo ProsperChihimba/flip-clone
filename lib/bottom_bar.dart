@@ -34,6 +34,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(child: _widgetOptions[_selectedIndex]),
+      backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
         padding: EdgeInsets.only(
           left: AppLayout.getHeight(15),
@@ -41,12 +42,12 @@ class _BottomBarSectionState extends State<BottomBarSection> {
           bottom: AppLayout.getHeight(13),
         ),
         child: SizedBox(
-          height: AppLayout.getHeight(70),
+          height: AppLayout.getHeight(75),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(35),
             child: BottomNavigationBar(
               elevation: 0,
-              backgroundColor: Colors.grey.shade100,
+              backgroundColor: Colors.grey.shade100.withOpacity(0.4),
               currentIndex: _selectedIndex,
               type: BottomNavigationBarType.fixed,
               onTap: _onItemTapped,
