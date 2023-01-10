@@ -14,6 +14,8 @@ class _AmountInputState extends State<AmountInput> {
     return TextField(
       cursorColor: Colors.black,
       decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.grey.shade100.withOpacity(0.5),
         hintText: "Amount",
         hintStyle: TextStyle(
           fontWeight: FontWeight.w500,
