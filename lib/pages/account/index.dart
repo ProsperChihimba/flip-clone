@@ -1,5 +1,6 @@
 import 'package:flip/pages/account/header.dart';
 import 'package:flip/pages/account/invite_button.dart';
+import 'package:flip/pages/account/verify_modal.dart';
 import 'package:flip/sections/green_button.dart';
 import 'package:flip/utils/app_layout.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -45,10 +46,25 @@ class _AccountPageState extends State<AccountPage> {
 
             // account verification button
             Gap(AppLayout.getHeight(30)),
-            const GreenButton(
-              title: "Verify Account",
-              size: 17,
-              hasIcon: true,
+            InkWell(
+              onTap: () {
+                // verify account modal
+                showModalBottomSheet(
+                  isScrollControlled: true,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(AppLayout.getHeight(40)),
+                    ),
+                  ),
+                  context: context,
+                  builder: (context) => const VerifyAccountModal(),
+                );
+              },
+              child: const GreenButton(
+                title: "Verify Account",
+                size: 17,
+                hasIcon: true,
+              ),
             ),
 
             // Invite friend
