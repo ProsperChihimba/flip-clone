@@ -12,6 +12,7 @@ class _AmountInputState extends State<AmountInput> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: Colors.black,
       decoration: InputDecoration(
         hintText: "Amount",
         hintStyle: TextStyle(
@@ -20,12 +21,21 @@ class _AmountInputState extends State<AmountInput> {
           fontSize: AppLayout.getHeight(15),
         ),
         contentPadding: EdgeInsets.symmetric(
-          vertical: AppLayout.getHeight(20),
+          vertical: AppLayout.getHeight(25),
           horizontal: AppLayout.getHeight(30),
         ),
-        enabledBorder: const UnderlineInputBorder(
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppLayout.getWidth(40)),
           borderSide: BorderSide(
-            color: Color(0xFFF4F4F4),
+            color: Colors.grey.shade300.withOpacity(0.5),
+            width: AppLayout.getWidth(4),
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppLayout.getWidth(40)),
+          borderSide: BorderSide(
+            color: Colors.grey.shade300.withOpacity(0.5),
+            width: AppLayout.getWidth(4),
           ),
         ),
       ),
