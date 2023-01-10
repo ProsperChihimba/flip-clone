@@ -68,9 +68,6 @@ class _GetStartedState extends State<GetStarted> {
           Gap(AppLayout.getWidth(20)),
 
           Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: AppLayout.getWidth(16),
-            ),
             width: size.width * 0.67,
             height: AppLayout.getHeight(110),
             decoration: BoxDecoration(
@@ -78,29 +75,72 @@ class _GetStartedState extends State<GetStarted> {
               borderRadius: BorderRadius.circular(AppLayout.getHeight(25)),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
-                      "Create Card to Make",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: AppLayout.getWidth(16),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Text(
+                        "Create Card to Make",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                    ),
-                    Text(
-                      "Online Payments",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                      Text(
+                        "Online Payments",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
 
                 // second container
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  height: AppLayout.getHeight(110),
+                  child: Row(
+                    children: [
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: Image(
+                              image: const AssetImage("assets/spotify.PNG"),
+                              width: AppLayout.getHeight(60),
+                            ),
+                          ),
+                          Positioned(
+                            top: -30,
+                            left: 8,
+                            child: Image(
+                              image: const AssetImage("assets/tube.PNG"),
+                              width: AppLayout.getHeight(50),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: -10,
+                            child: Image(
+                              image: const AssetImage("assets/itune.PNG"),
+                              width: AppLayout.getHeight(35),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           )
