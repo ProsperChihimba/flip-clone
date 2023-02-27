@@ -42,7 +42,7 @@ class _BottomBarSectionState extends State<BottomBarSection> {
           bottom: AppLayout.getHeight(13),
         ),
         child: SizedBox(
-          height: AppLayout.getHeight(75),
+          // height: AppLayout.getHeight(75),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(35),
             child: BottomNavigationBar(
@@ -84,12 +84,12 @@ class _BottomBarSectionState extends State<BottomBarSection> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
-                    FluentSystemIcons.ic_fluent_document_copy_regular,
+                    FluentSystemIcons.ic_fluent_layer_regular,
                     size: AppLayout.getHeight(22),
                   ),
                   label: "Payments",
                   activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_document_copy_filled,
+                    FluentSystemIcons.ic_fluent_layer_filled,
                     size: AppLayout.getHeight(22),
                   ),
                 ),
